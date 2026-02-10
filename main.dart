@@ -244,7 +244,7 @@ class _HomePageState extends State<HomePage> {
                           setState(() => cart.clear());
                           Navigator.pop(context);
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('✅ Order placed! Total: ₹$total'), backgroundColor: Colors.green),
+                            SnackBar(content: Text(' Order placed! Total: ₹$total'), backgroundColor: Colors.green),
                           );
                         },
                         child: const Text('Place Order'),
@@ -259,3 +259,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
